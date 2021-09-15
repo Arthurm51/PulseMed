@@ -1,0 +1,213 @@
+#content{
+    margin-top: 5%;
+    margin-left: 10%;
+    width: 85%;
+    position: relative;
+    
+    height: 100%;
+}
+
+#content .benefits{ 
+    width: 35%;
+}
+
+#content .benefits li{
+    margin-bottom: 50px;
+    background-color: whitesmoke;
+    border-radius: 0 4px 0 0;
+    padding: 15px;
+    list-style: none;
+    border-bottom: var(--blue) solid 2px ;
+    border-left: var(--blue) solid 2px;
+}
+
+#content .benefits h3{
+    color: var(--blue);
+}
+
+#content .about{
+    width: 35%;
+    position: absolute;
+    top: -50px;
+    right: 10%;
+}
+
+#content .about img{
+    position: relative;
+    opacity: 0.15;
+    width: 100%;
+    z-index: -1;
+    
+}
+
+
+
+#content .about #opinions{
+    position: absolute;
+    width: 150%;
+    top: 65%;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 420px;
+    
+
+}
+
+#content .about #opinions .card{
+    display: none;
+    background-color: whitesmoke;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    border: var(--blue) solid 2px;
+    border-radius: 8px;
+}
+
+#content .about #opinions .card#cardFront{
+    position: absolute;
+    opacity: 1;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 1;
+    transition: 1s;
+}
+
+#content .about #opinions .card#cardFront:hover{
+    
+    
+    transform: translate(-50%, 0) scale(1.05);
+    
+}
+
+#content .about #opinions .card#cardLeft{
+    
+    opacity: 0.3;
+    right: 70%;
+    left: 30%;
+    transform: translate(-50%, 0);
+    border: none;
+    z-index: 0;
+}
+
+
+#content .about #opinions .card#cardRight{
+    
+    opacity: 0.3;
+    right: 30%;
+    left: 70%;
+    transform: translate(-50%, 0);
+    border: none;
+    z-index: 0;
+}
+
+#content .about #opinions .card#cardFront #leftArrow{
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translate(0, -50%);
+    z-index: 2;
+    color: var(--blue);
+    font-size: 22px;
+    cursor: pointer;
+    
+    
+}
+
+#content .about #opinions .card#cardFront #rightArrow{
+    position: absolute;
+    top: 50%;
+    right: -10%;
+    transform: translate(0, -50%);
+    z-index: 2;
+    color: var(--blue);
+    font-size: 22px;
+    cursor: pointer;
+}
+
+
+#content .about #opinions .card .cardContent{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+
+#content .about #opinions .card .cardContent .client{
+    width: 90%;
+    position: absolute;
+    height: 100px;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+
+#content .about #opinions .card .cardContent .client img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    opacity: 1;
+    margin-bottom: 20px;    
+}
+
+#content .about #opinions .card .cardContent .client h3{
+    margin-top: 20px;
+    width: 100%;
+    word-wrap: break-word;
+    color: var(--blue);
+    margin-bottom: 15px;
+}
+
+#content .about #opinions .card .cardContent .clientOpinion .textOpinion{
+    position: absolute;
+    top: 47%;
+    width: 90%;
+    max-height: 50%;
+    overflow-y: scroll;
+    margin-left: 5%;
+}
+
+#content .about #opinions .card .cardContent .clientOpinion .textOpinion::-webkit-scrollbar{
+    width: 9px;
+    border: whitesmoke solid 2px;
+    border-radius: 8px;
+    
+}
+
+#content .about #opinions .card .cardContent .clientOpinion .textOpinion::-webkit-scrollbar-thumb:vertical{
+    background-color: var(--blue);
+    border: whitesmoke solid 3px;
+    border-radius: 8px;
+}
+
+#content .about #opinions .card .cardContent .clientOpinion #evaluation{
+    position: absolute;
+    top: 30%;
+    left: 15px;
+    width: 100%;
+}
+
+#content .about #opinions .card .cardContent .clientOpinion #evaluation img{
+    opacity: 1;
+    width: 20px;
+    margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

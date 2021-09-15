@@ -1,0 +1,7 @@
+footer{
+    margin-top: 200px;
+    background-color: var(--blue);
+    height: 300px;
+    width: 100%;
+    color: white;
+}

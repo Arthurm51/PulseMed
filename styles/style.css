@@ -1,0 +1,20 @@
+:root{
+    --blue: #1D0960;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body{
+    background-color: #d3e0ff77;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+
+
