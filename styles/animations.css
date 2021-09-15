@@ -169,3 +169,12 @@
         opacity: 1;
     }
 }
+
+@keyframes lessOpacity{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}

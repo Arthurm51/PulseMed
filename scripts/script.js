@@ -18,22 +18,26 @@ let opinions = [
     new People(6, 'Mayara', 4, 'Muitsdsadwqewqdfrefero legal', 'avatar7.jpg'),
 ]
 
-let leftCard = opinions.length - 1
+let quantityOpinions = opinions.length - 1
+let leftCard = opinions[quantityOpinions].id
 let frontCard = 0
 let rightCard = 1
-let leftCardOpinion = document.getElementById('cardLeft')
-let frontCardOpinion = document.getElementById('cardFront')
-let rightCardOpinion = document.getElementById('cardRight')
-let nextCardOpinion = document.getElementById('nextCard')
-let nextCardOpinionLeft = document.getElementById('nextCardLeft')
-let nextRightCard = frontCard + 1
-let nextLeftCard = leftCard - 1
-let img = '<img src="./assets/images/star.png" alt="Avaliação"></img>'
+const leftCardOpinion = document.getElementById('cardLeft')
+const frontCardOpinion = document.getElementById('cardFront')
+const rightCardOpinion = document.getElementById('cardRight')
+const nextCardOpinion = document.getElementById('nextCard')
+const nextCardOpinionLeft = document.getElementById('nextCardLeft')
+
+
+let nextCard = null
+
+const img = '<img src="./assets/images/star.png" alt="Avaliação"></img>'
 
 
 
 
 function addOpinion(){
+    
     
     leftCardOpinion.innerHTML =
     `
@@ -63,11 +67,11 @@ function addOpinion(){
     </div>`
     
     frontCardOpinion.innerHTML = `
-    <div id="leftArrow" onclick="changeOpinionLeft()">
+    <div id="leftArrow" onclick="changeOpinion('left')">
         <h1>&lt;</h1>
     </div>
 
-    <div id="rightArrow" onclick="changeOpinionRight()">
+    <div id="rightArrow" onclick="changeOpinion('right')">
         <h1>&gt;</h1>
     </div>
 
