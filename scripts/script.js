@@ -8,10 +8,6 @@ class People  {
     }
 }
 
-let leftCard = 6
-let frontCard = 0
-let rightCard = 1
-
 let opinions = [
     new People(0, 'Arthur', 5, 'Muito legal', 'avatar1.jpg'),
     new People(1, 'Machado', 2, 'Muito ruim', 'avatar2.jpg'),
@@ -22,14 +18,33 @@ let opinions = [
     new People(6, 'Mayara', 4, 'Muitsdsadwqewqdfrefero legal', 'avatar7.jpg'),
 ]
 
-function addOpinion(){
-    let leftCardOpinion = document.getElementById('cardLeft')
-    let frontCardOpinion = document.getElementById('cardFront')
-    let rightCardOpinion = document.getElementById('cardRight')
-    let img = '<img src="./assets/images/star.png" alt="Avaliação"></img>'
+let leftCard = opinions.length - 1
+let frontCard = 0
+let rightCard = 1
+let leftCardOpinion = document.getElementById('cardLeft')
+let frontCardOpinion = document.getElementById('cardFront')
+let rightCardOpinion = document.getElementById('cardRight')
+let nextCardOpinion = document.getElementById('nextCard')
+let nextCardOpinionLeft = document.getElementById('nextCardLeft')
+let nextRightCard = frontCard + 1
+let nextLeftCard = leftCard - 1
+let img = '<img src="./assets/images/star.png" alt="Avaliação"></img>'
 
+
+
+
+function addOpinion(){
+    
     leftCardOpinion.innerHTML =
-    `<div class="cardContent">
+    `
+    <div id="leftArrowLeftCard" >
+        <h1>&lt;</h1>
+    </div>
+
+    <div id="rightArrowLeftCard">
+        <h1>&gt;</h1>
+    </div>
+    <div class="cardContent">
         <div class="client">
             <img src="./assets/avatares/${opinions[leftCard].photo}" alt="Foto">
             <h3>${opinions[leftCard].name}</h3>
@@ -45,15 +60,14 @@ function addOpinion(){
             </div>
              
         </div>
-    
     </div>`
     
     frontCardOpinion.innerHTML = `
-    <div id="leftArrow">
+    <div id="leftArrow" onclick="changeOpinionLeft()">
         <h1>&lt;</h1>
     </div>
 
-    <div id="rightArrow">
+    <div id="rightArrow" onclick="changeOpinionRight()">
         <h1>&gt;</h1>
     </div>
 
@@ -76,9 +90,16 @@ function addOpinion(){
        
     </div>`
 
-
     rightCardOpinion.innerHTML = 
-    `<div class="cardContent">
+    `
+    <div id="leftArrowRightCard">
+        <h1>&lt;</h1>
+    </div>
+
+    <div id="rightArrowRightCard">
+        <h1>&gt;</h1>
+    </div>
+    <div class="cardContent">
 
         <div class="client">
             <img src="./assets/avatares/${opinions[rightCard].photo}" alt="dsadsa">
@@ -90,7 +111,6 @@ function addOpinion(){
                 <p>${opinions[rightCard].opinion}</p>
             </div>
                 
-            
             <div id="evaluation">
                 ${img.repeat(opinions[rightCard].evaluation)}
             </div>
@@ -99,4 +119,6 @@ function addOpinion(){
 }
 
 addOpinion()
+
+
 

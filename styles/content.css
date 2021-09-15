@@ -21,6 +21,10 @@
     border-left: var(--blue) solid 2px;
 }
 
+#content .benefits li:hover{
+    cursor: default;
+}
+
 #content .benefits h3{
     color: var(--blue);
 }
@@ -36,8 +40,7 @@
     position: relative;
     opacity: 0.15;
     width: 100%;
-    z-index: -1;
-    
+    z-index: 0;
 }
 
 
@@ -61,7 +64,7 @@
     height: 100%;
     display: flex;
     position: absolute;
-    border: var(--blue) solid 2px;
+    
     border-radius: 8px;
 }
 
@@ -73,23 +76,47 @@
     transform: translate(-50%, 0);
     z-index: 1;
     transition: 1s;
+    
+    
 }
 
 #content .about #opinions .card#cardFront:hover{
     
     
-    transform: translate(-50%, 0) scale(1.05);
+    transform: translate(-50%, 0) scale(1.08);
     
 }
+
+#content .about #opinions .card#nextCard{
+    position: absolute;
+    opacity: 0;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    
+    z-index: -1;
+}
+
+#content .about #opinions .card#nextCardLeft{
+    position: absolute;
+    opacity: 0;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    
+    z-index: -1;
+}
+
 
 #content .about #opinions .card#cardLeft{
     
     opacity: 0.3;
     right: 70%;
     left: 30%;
-    transform: translate(-50%, 0);
-    border: none;
+    transform: translate(-50%, 0) scale(0.75);
+    
     z-index: 0;
+    
 }
 
 
@@ -98,12 +125,12 @@
     opacity: 0.3;
     right: 30%;
     left: 70%;
-    transform: translate(-50%, 0);
-    border: none;
+    transform: translate(-50%, 0) scale(0.75);
+    
     z-index: 0;
 }
 
-#content .about #opinions .card#cardFront #leftArrow{
+#content .about #opinions .card #leftArrow{
     position: absolute;
     top: 50%;
     left: -10%;
@@ -112,11 +139,34 @@
     color: var(--blue);
     font-size: 22px;
     cursor: pointer;
-    
-    
 }
 
-#content .about #opinions .card#cardFront #rightArrow{
+#content .about #opinions .card #leftArrowLeftCard, #leftArrowRightCard{
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translate(0, -50%);
+    z-index: -1;
+    color: var(--blue);
+    font-size: 22px;
+    cursor: default;
+    opacity: 0;
+}
+
+#content .about #opinions .card #rightArrowLeftCard, #rightArrowRightCard{
+    position: absolute;
+    top: 50%;
+    right: -10%;
+    transform: translate(0, -50%);
+    z-index: 2;
+    color: var(--blue);
+    font-size: 22px;
+    cursor: default;
+    opacity: 0;
+}
+
+
+#content .about #opinions .card #rightArrow{
     position: absolute;
     top: 50%;
     right: -10%;
@@ -168,6 +218,7 @@
     max-height: 50%;
     overflow-y: scroll;
     margin-left: 5%;
+    word-wrap: break-word;
 }
 
 #content .about #opinions .card .cardContent .clientOpinion .textOpinion::-webkit-scrollbar{
@@ -188,6 +239,7 @@
     top: 30%;
     left: 15px;
     width: 100%;
+    height: 20px;
 }
 
 #content .about #opinions .card .cardContent .clientOpinion #evaluation img{
