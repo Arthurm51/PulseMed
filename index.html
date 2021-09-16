@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <title>PulseMed</title>
 </head>
-<body>
+<body onload="changeImagePrototype()">
 
     <header>
         <div class="headerContent">
@@ -24,6 +24,10 @@
     </header>
     
     <div id="content">
+
+        <div class="buy">
+            <button class="button"> Compre já </button>
+        </div>
 
         <div class="benefits">
             <ul>
@@ -42,7 +46,7 @@
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque a, ipsa inventore, saepe, iusto quos fuga cumque aperiam sapiente autem doloribus itaque accusantium nemo placeat? Eaque animi consequuntur incidunt quis!</p>
                 </li>
 
-                <button>Saiba mais</button>
+                <button class="button">+Beneficios</button>
                 
                 
                 
@@ -52,7 +56,11 @@
 
         <div class="about">
             <h2></h2>
-            <img src="./assets/images/applewatch.png" alt="pulseira PulseMed" id="prototype">
+            
+    
+            <img src="./assets/images/applewatchwhite.png" alt="pulseira PulseMed" id="prototype">
+            
+            
             <div id="opinions">
                 <div class="card" id="cardFront"></div>
                 <div class="card" id="nextCard"></div>

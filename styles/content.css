@@ -32,7 +32,7 @@
 #content .about{
     width: 35%;
     position: absolute;
-    top: -50px;
+    top: 0px;
     right: 10%;
 }
 
@@ -41,8 +41,12 @@
     opacity: 0.15;
     width: 100%;
     z-index: 0;
+    transition: 1s;
 }
 
+#content .about #prototype{
+    filter: drop-shadow(8px 8px 8px #121212);
+}
 
 
 #content .about #opinions{
@@ -82,7 +86,7 @@
 
 #content .about #opinions .card#cardFront:hover{
     
-    
+    cursor: default;
     transform: translate(-50%, 0) scale(1.08);
     
 }
@@ -116,14 +120,14 @@
     right: 70%;
     left: 30%;
     transform: translate(-50%, 0) scale(0.75);
-    
+    cursor: default;
     z-index: 0;
     
 }
 
 
 #content .about #opinions .card#cardRight{
-    
+    cursor: default;
     opacity: 0.3;
     right: 30%;
     left: 70%;
@@ -215,9 +219,9 @@
 
 #content .about #opinions .card .cardContent .clientOpinion .textOpinion{
     position: absolute;
-    top: 47%;
+    top: 53%;
     width: 90%;
-    max-height: 50%;
+    max-height: 42%;
     overflow-y: scroll;
     margin-left: 5%;
     word-wrap: break-word;
@@ -251,6 +255,28 @@
 }
 
 
+.button {
+    
+    background-color: #321397;
+    color: white;
+    padding: 10px;
+    font-size: 23px;
+    border-radius: 4px;
+    font-weight: bold;
+    border: none;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: var(--blue);
+}
+
+#content .buy{
+    margin-bottom: 50px;
+    margin-top: -40px;
+
+}
 
 
 

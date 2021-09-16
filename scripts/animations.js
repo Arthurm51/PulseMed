@@ -66,7 +66,7 @@ function addNextRightCard(){
 
         <div class="client">
             <img src="./assets/avatares/${opinions[nextCard].photo}" alt="dsadsa">
-            <h3>${opinions[nextCard].name}</h3>
+            <h3>${opinions[nextCard].name}, ${opinions[nextCard].age} anos.</h3>
         </div>
 
         <div class="clientOpinion">
@@ -113,7 +113,7 @@ function addNextLeftCard(){
 
         <div class="client">
             <img src="./assets/avatares/${opinions[nextCard].photo}" alt="dsadsa">
-            <h3>${opinions[nextCard].name}</h3>
+            <h3>${opinions[nextCard].name}, ${opinions[nextCard].age} anos.</h3>
         </div>
 
         <div class="clientOpinion">
@@ -147,8 +147,10 @@ function addNextLeftCard(){
     leftArrowLeftCard.style.animationDuration = '1.25s'
     rightArrowLeftCard.style.animationDuration = '1.25s'
 
-    
 }
+
+
+
 
 
 
