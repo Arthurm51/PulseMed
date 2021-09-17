@@ -9,14 +9,16 @@
     <link rel="stylesheet" href="./styles/content.css">
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/animations.css">
+    <link rel="stylesheet" href="./styles/modal.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/images/logopulsemedpng.png" type="image/x-icon">
     <title>PulseMed</title>
 </head>
-<body onload="changeImagePrototype()">
+<body>
 
-    <header>
+    <header id="header">
         <div class="headerContent">
             <img src="./assets/images/logopulsemedpng.png" alt="logo PulseMed" id="logo">
             <h1>PulseMed, sua companheira no dia-a-dia mais saudável!</h1>
@@ -24,29 +26,26 @@
     </header>
     
     <div id="content">
-
-        <div class="buy">
-            <button class="button"> Compre já </button>
-        </div>
-
         <div class="benefits">
             <ul>
+                <h2>Beneficios</h2>
+
                 <li>
-                    <h3>Beneficio 1</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit blanditiis optio et, molestias cupiditate repellendus quidem aspernatur itaque minus neque? Quae asperiores ut totam consequuntur voluptate nesciunt quidem voluptates dolorum.</p>
+                    <h3>Organismo:</h3>
+                    <p>Tomar o remédio na hora certa faz toda a diferença, e isso vale para todas as idades. Quando o médico prescreve uma medicação ele verifica o melhor horário e intervalo do medicamento a ser prescrito de acordo com o funcionamento do organismo do paciente, seus hábitos e rotinas.</p>
                 </li>
                 
                 <li>
-                    <h3>Beneficio 2</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae doloremque, voluptas eius accusamus voluptates nostrum numquam. Amet consectetur reprehenderit, voluptatibus at dolorum maxime odio tempora consequatur sed rem consequuntur labore?</p>
+                    <h3>Relogio biológico:</h3>
+                    <p>O relógio biológico funciona conforme as mudanças que são impostas ao corpo humano. No caso da administração de medicações, ele se adapta a essas circunstâncias se preparando para gerar os efeitos previstos pelos profissionais de saúde.</p>
                 </li>
                 
                 <li>
-                    <h3>Beneficio 3</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque a, ipsa inventore, saepe, iusto quos fuga cumque aperiam sapiente autem doloribus itaque accusantium nemo placeat? Eaque animi consequuntur incidunt quis!</p>
+                    <h3>Facilidade:</h3>
+                    <p>A PulseMed é incrivelmente facil de ser usada. Com botões faceis e intuitivos, você não precisa ficar desvendando mistérios para configurar seus alertas de medicamento. Chega de botões e funcionalidades criadas para confundir...</p>
                 </li>
 
-                <button class="button">+Beneficios</button>
+                <button class="button" id="buttonKnow" onclick="openModal()">Saiba +</button>
                 
                 
                 
@@ -71,15 +70,58 @@
 
     </div>
 
+    
+
+
+    <div id="modalKnow">
+        <button id="closeModal" onclick="closeModal()">X</button>
+        <img src="./assets/images/logopulsemedpng.png" alt="Logo PulseMed" id="modalLogo">
+        <div class="resumeModal">
+            <h2>PulseMed</h2>
+            <p>Pare de errar! Adquira já a sua PulseMed, e seja avisado no horário de seu medicamento. Seu médico e seu organismo irão agradecer.</p>
+            <h3>Chega de efeito ineficaz!</h3>
+        </div>
+        
+        <div id="pulseColors">
+            <img src="./assets/images/applewatchwhite.png" alt="PulseMed">
+            <div class="buttonsColor">
+                <button id="white" onclick="changeImage('white')"></button>
+                <button id="black" onclick="changeImage('black')"></button>
+                <button id="pink" onclick="changeImage('pink')"></button>
+            </div>
+            
+        </div>
+        
+    </div>
+
+
+
 
     <footer>
-        <p>dsadsadsa</p>
-    </footer>
-    
+        <div class="contentFooter">
+            <p>Projeto criado apenas para fins educativos.</p>
+            <div class="social">
+                <a href="https://github.com/Arthurm51" target="_blank">
+                    <img src="./assets/images/github.png" alt="githubIcon">
+                </a>
+                
+                <a href="https://instagram.com/arthurm.51" target="_blank" >
+                    <img src="./assets/images/instagram.png" alt="instagramIcon">
+                </a>
 
-    
-    
-    
+                <a href="http://linkedin.com/in/arthurvieiramachado51" target="_blank">
+                    <img src="./assets/images/linkedin.png" alt="linkedinIcon">
+                </a>
+                
+                
+            </div>
+            <p>Arthur Vieira Machado</p>
+            
+        </div>
+        
+        
+
+    </footer>
 
     <script src="./scripts/script.js"></script>
     <script src="./scripts/animations.js"></script>

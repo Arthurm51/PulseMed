@@ -1,5 +1,6 @@
 :root{
     --blue: #1D0960;
+    --lightBlue: #d3e0ff77;
 }
 
 *{
@@ -10,7 +11,7 @@
 
 
 body{
-    background-color: #d3e0ff77;
+    background-color: var(--lightBlue);
     font-family: 'Poppins', sans-serif;
 
 }

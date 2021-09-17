@@ -1,0 +1,173 @@
+#modalKnow{
+    display: none;
+    opacity: 0;
+    background-color: whitesmoke;
+    width: 70%;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 8px;
+    z-index: 1;
+}
+
+#modalKnow #closeModal{
+    position: absolute;
+    background-color: var(--blue);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    font-size: 22px;
+    top: -25px;
+    right: -25px;
+    cursor: pointer;
+}
+
+#modalKnow #modalLogo{
+    width: 350px;
+    position: relative;
+    top: -50%;
+    margin-left: 50px;
+    transform: translate(0, 25%);
+}
+
+#modalKnow .resumeModal{
+    width: 40%;
+    margin-left: 100px;
+    position: relative;
+    bottom: 25%;
+}
+
+#modalKnow .resumeModal h2{
+    color: var(--blue);
+    margin-bottom: 20px;
+}
+
+#modalKnow .resumeModal h3{
+    color: var(--blue);
+    margin-top: 20px;
+}
+
+#modalKnow #pulseColors{
+    width: 25%;
+    height: 80%;
+    position: absolute;
+    right: 15%;
+    top: 50%;
+    transform: translate(0, -50%);
+    
+    
+}
+
+#modalKnow #pulseColors img{
+    width: 250px;
+    position: absolute;
+    right: 50%;
+    transform: translate(50%, 0);
+    top: 10%;
+    transition: 1s;
+}
+
+#modalKnow #pulseColors img:hover{
+    transform: translate(50%, 0) scale(1.2);
+}
+
+#modalKnow #pulseColors .buttonsColor{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    height: 100%;
+    margin: auto;
+    align-items: flex-end;
+}
+
+
+#modalKnow #pulseColors .buttonsColor button{
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    border: gray solid 1px;
+    cursor: pointer;
+}
+
+#modalKnow #pulseColors .buttonsColor #white{
+    background-color: white;
+}
+
+#modalKnow #pulseColors .buttonsColor #black{
+    background-color: black;
+}
+
+#modalKnow #pulseColors .buttonsColor #pink{
+    background-color: #F0CFC6;
+}
+
+
+
+@media only screen and (max-width: 1500px) {
+    #modalKnow #pulseColors .buttonsColor{
+        width: 70%;
+        justify-content: space-around;
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+    #modalKnow{
+        font-size: 80%;
+        height: 350px;
+    }
+
+    #modalKnow #modalLogo{
+        width: 250px;
+        top: -175px;  
+    }
+
+    #modalKnow #pulseColors img{
+        width: 150px;
+    }
+
+}
+
+@media only screen and (max-width: 800px){
+    #modalKnow{
+        height: 700px;
+    }
+
+    #modalKnow #modalLogo{
+        width: 200px;
+        top: -135px; 
+        
+    }
+
+    #modalKnow .resumeModal{
+        width: 80%;
+        margin-left: 10%;
+        bottom: unset;
+        top: -50px;
+    }
+
+    
+    #modalKnow #pulseColors{
+        width: 80%;
+        right: 10%;
+        top: 70%;
+        height: 40%;
+    }
+
+    #modalKnow #pulseColors .buttonsColor{
+        width: 30%;
+    }
+
+}
+
+@media only screen and (max-width: 600px){
+    #modalKnow #pulseColors .buttonsColor{
+        width: 50%;
+    }
+}

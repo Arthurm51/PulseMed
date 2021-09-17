@@ -11,6 +11,11 @@
     width: 35%;
 }
 
+#content .benefits h2{
+    margin-bottom: 20px;
+    color: var(--blue);
+}
+
 #content .benefits li{
     margin-bottom: 50px;
     background-color: whitesmoke;
@@ -261,6 +266,7 @@
     color: white;
     padding: 10px;
     font-size: 23px;
+    width: 150px;
     border-radius: 4px;
     font-weight: bold;
     border: none;
@@ -272,15 +278,207 @@
     background-color: var(--blue);
 }
 
-#content .buy{
-    margin-bottom: 50px;
-    margin-top: -40px;
 
+@media only screen and (max-width: 1200px){
+    #content{
+        height: 110vh;
+    }
+
+    #content .benefits{ 
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    #content .about{
+        width: 35%;
+        position: absolute;
+        bottom: -70px;
+        right: 50%;
+        transform: translate(50%, 0);
+    }
+
+    #content .about #prototype{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 980px){
+    #content{
+        height: 120vh;
+    }
+
+
+    #content .benefits{ 
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    #content .about{
+        width: 35%;
+        position: absolute;
+        bottom: -140px;
+        right: 50%;
+        transform: translate(50%, 0);
+    }
+
+    #content .about #prototype{
+        display: none;
+    }
 }
 
 
+@media only screen and (max-width: 900px){
+    #content{
+        margin-top: 5%;
+        height: 105vh;
+        font-size: 90%;
+    }
+
+    #content .about #opinions .card#cardFront:hover{
+    
+        cursor: default;
+        transform: translate(-50%, 0) scale(1);
+        
+    }
+
+    #content .about #opinions .card#cardRight{
+        cursor: default;
+        opacity: 0.3;
+        right: 20%;
+        left: 80%;
+        transform: translate(-50%, 0) scale(0.75);
+        
+        z-index: 0;
+    }
+
+    #content .about #opinions .card#cardLeft{
+    
+        opacity: 0.3;
+        right: 80%;
+        left: 20%;
+        transform: translate(-50%, 0) scale(0.75);
+        cursor: default;
+        z-index: 0;
+        
+    }
 
 
+    #buttonKnow {
+        font-size: 150%;
+        width: 150px;
+        display: flex;
+        margin-top: -30px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 770px){
+    #content{
+        font-size: 85%;
+        
+    }
+
+    #buttonKnow {
+        font-size: 120%;
+        width: 120px;
+    }
+
+    #content .about{
+        transform: translate(50%, 0) scale(0.9);
+    }
+
+    
+
+    
+}
+
+@media only screen and (max-width: 680px){
+    #content{
+        height: 110vh;
+        font-size: 80%;
+    }
+
+    #content .about{
+        bottom: -150px;
+    }
+}
+
+@media only screen and (max-width: 510px){
+    #content{
+        height: 110vh;
+        font-size: 75%;
+    }
+
+    #buttonKnow {
+        font-size: 100%;
+        width: 100px;
+    }
+
+    #content .about{
+        bottom: -300px;
+        transform: translate(50%, 0) scale(0.8);
+    }
+
+    #content .about #opinions .card#cardRight{
+        cursor: default;
+        opacity: 0.3;
+        right: 10%;
+        left: 90%;
+        transform: translate(-50%, 0) scale(0.75);
+        
+        z-index: 0;
+    }
+
+    #content .about #opinions .card#cardLeft{
+    
+        opacity: 0.3;
+        right: 90%;
+        left: 10%;
+        transform: translate(-50%, 0) scale(0.75);
+        cursor: default;
+        z-index: 0;
+        
+    }
+
+    
+}
+
+
+@media only screen and (max-width: 390px){
+    #content{
+        height: 130vh;
+        font-size: 70%;
+    }
+
+    #content .about{
+        bottom: -300px;
+        transform: translate(50%, 0) scale(0.7);
+    }
+
+  
+
+
+
+}
+
+@media only screen and (max-height: 850px){
+    #content{
+        height: 120vh;
+    }
+}
+
+@media only screen and (max-height: 760px){
+    #content{
+        height: 130vh;
+    }
+}
+
+@media only screen and (max-height: 690px){
+    #content{
+        height: 140vh;
+    }
+}
 
 
 

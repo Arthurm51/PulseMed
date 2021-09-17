@@ -10,8 +10,7 @@ class People  {
 }
 
 let opinions = [
-    new People(0,
-         'Ariel Freiria Carregueiro', 5, 'Me ajudou muito com meus medicamentos controlados. Antes acabava tomando todos fora de horário. Pulseira excelente!', 'avatar1.jpg', 54),
+    new People(0,'Ariel Freiria Carregueiro', 5, 'Me ajudou muito com meus medicamentos controlados. Antes acabava tomando todos fora de horário. Pulseira excelente!', 'avatar1.jpg', 54),
     new People(1, 'Ulisses Viana Cotrim', 3, 'O produto é muito bom, mas sinto falta de um sistema que monitore meus batimentos cardíacos, seria muito interessante para as proximas pulseiras.', 'avatar2.jpg', 73),
     new People(2, 'Dália Pêcego Salgueiro', 5, 'Muito bommmmmmmmm! Amei!', 'avatar3.jpg', 62),
     new People(3, 'Matthias Vale Faustino', 5, 'Muito boa pulseira, várias cores e tamanhos. Ganhei de meus filhos de aniversário por recomendação de meu médico, e foi o melhor presente possível, não consigo me imaginar mais sem esta belezinha,tem facilitado muito minha rotina de medicamentos.', 'avatar4.jpg', 61),

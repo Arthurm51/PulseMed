@@ -51,9 +51,9 @@ function changeOpinion(arrow){
         rightCardOpinion.style.animationName = ''
         frontCardOpinion.style.animationName = ''
         nextCardOpinion.style.animationName = ''
-        leftArrowLeftCard.style.animationName = ''
     }, 1250); 
 }
+
 
 function addNextRightCard(){
     const leftArrowFrontCard = document.getElementById('leftArrow')
@@ -149,9 +149,72 @@ function addNextLeftCard(){
 
 }
 
+const modal = document.getElementById('modalKnow')
+const header = document.getElementById('header')
+const content = document.getElementById('content')
+const imagePulseModal = document.getElementById('pulseColors')
+const buttonOpen = document.getElementById('buttonKnow')
 
 
+function openModal() {
+    const leftArrowFrontCard = document.getElementById('leftArrow')
+    const rightArrowFrontCard = document.getElementById('rightArrow')
+    header.style.animationName = 'lessOpacity25'
+    header.style.animationDuration = '1s'
+    header.style.animationFillMode = 'forwards'
+    
 
+    content.style.animationName = 'lessOpacity25'
+    content.style.animationDuration = '1s'
+    content.style.animationFillMode = 'forwards'
+    
+    leftArrowFrontCard.setAttribute("onclick","")
+    rightArrowFrontCard.setAttribute("onclick","")
+
+    modal.style.display = 'unset'
+    modal.style.animationName = 'moreOpacity'
+    modal.style.animationDuration = '1s'
+    modal.style.animationFillMode = 'forwards'
+
+    buttonOpen.disabled = true
+}
+
+
+function closeModal() {
+    const leftArrowFrontCard = document.getElementById('leftArrow')
+    const rightArrowFrontCard = document.getElementById('rightArrow')
+    header.style.animationName = 'moreOpacity25'
+    header.style.animationDuration = '1s'
+    header.style.animationFillMode = 'forwards'
+
+    content.style.animationName = 'moreOpacity25'
+    content.style.animationDuration = '1s'
+    content.style.animationFillMode = 'forwards'
+    
+    leftArrowFrontCard.setAttribute("onclick","changeOpinion('left')")
+    rightArrowFrontCard.setAttribute("onclick","changeOpinion('right')")
+    
+    
+    modal.style.animationName = 'lessOpacity'
+    modal.style.animationDuration = '1s'
+    setTimeout(() => {
+        modal.style.display = 'none'
+        buttonOpen.disabled = false
+        
+    }, 1000); 
+}
+
+function changeImage(color){
+    imagePulseModal.innerHTML = 
+    `
+        <img src="./assets/images/applewatch${color}.png" alt="PulseMed">
+        <div class="buttonsColor">
+            <button id="white" onclick="changeImage('white')"></button>
+            <button id="black" onclick="changeImage('black')"></button>
+            <button id="pink" onclick="changeImage('pink')"></button>
+        </div>
+    `
+}
 
 
 
