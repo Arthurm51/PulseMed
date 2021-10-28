@@ -51,17 +51,21 @@
 
 #content .about #prototype{
     filter: drop-shadow(8px 8px 8px #121212);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
 }
 
 
 #content .about #opinions{
     position: absolute;
     width: 150%;
-    top: 65%;
+    top: 70%;
     right: 50%;
     left: 50%;
     transform: translate(-50%, 0);
     height: 420px;
+    margin-top: 100px;
     
 
 }
@@ -298,7 +302,10 @@
     }
 
     #content .about #prototype{
-        display: none;
+        position: absolute;
+        bottom: 20%;
+        right: 50%;
+        transform: translate(50%, 0);
     }
 }
 
