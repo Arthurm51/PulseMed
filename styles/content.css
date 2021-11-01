@@ -290,9 +290,10 @@
 }
 
 
+
 @media only screen and (max-width: 1200px){
     #content{
-        height: 110vh;
+        height: 160vh;
     }
 
     #content .benefits{ 
@@ -303,55 +304,24 @@
     #content .about{
         width: 35%;
         position: absolute;
-        bottom: -70px;
+        bottom: 70px;
         right: 50%;
         transform: translate(50%, 0);
     }
 
     #content .about #prototype{
         position: absolute;
-        bottom: 20%;
+        bottom: 18%;
         right: 50%;
         transform: translate(50%, 0);
-    }
-}
-
-@media only screen and (max-width: 980px){
-    #content{
-        height: 120vh;
+        
     }
 
-
-    #content .benefits{ 
-        width: 80%;
-        margin-left: 10%;
-    }
-
-    #content .about{
-        width: 35%;
-        position: absolute;
-        bottom: -140px;
-        right: 50%;
-        transform: translate(50%, 0);
-    }
-
-    #content .about #prototype{
-        display: none;
-    }
-}
-
-
-@media only screen and (max-width: 900px){
-    #content{
-        margin-top: 5%;
-        height: 105vh;
-        font-size: 90%;
-    }
-
-    #content .about #opinions .card#cardFront:hover{
+    #content .about #opinions .card#cardFront{
     
         cursor: default;
         transform: translate(-50%, 0) scale(1);
+        top: 40px;
         
     }
 
@@ -361,7 +331,7 @@
         right: 20%;
         left: 80%;
         transform: translate(-50%, 0) scale(0.75);
-        
+        top: 40px;
         z-index: 0;
     }
 
@@ -371,8 +341,125 @@
         right: 80%;
         left: 20%;
         transform: translate(-50%, 0) scale(0.75);
+        top: 40px;
         cursor: default;
         z-index: 0;
+        
+    }
+
+    #content .about #opinions button{
+        position: absolute;
+        bottom: -110px;
+        right: 50%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        
+    }
+}
+
+@media only screen and (max-width: 980px){
+    #content{
+        height: 170vh;
+    }
+
+    #content .about #prototype{
+        position: absolute;
+        bottom: 20%;
+        right: 50%;
+        transform: translate(50%, 0);
+        
+    }
+
+    #content .about #opinions .card#cardFront{
+    
+        cursor: default;
+        transform: translate(-50%, 0) scale(1);
+        top: 55px;
+        
+    }
+
+    #content .about #opinions .card#cardRight{
+        cursor: default;
+        opacity: 0.3;
+        right: 20%;
+        left: 80%;
+        transform: translate(-50%, 0) scale(0.75);
+        top: 55px;
+        z-index: 0;
+    }
+
+    #content .about #opinions .card#cardLeft{
+    
+        opacity: 0.3;
+        right: 80%;
+        left: 20%;
+        transform: translate(-50%, 0) scale(0.75);
+        top: 55px;
+        cursor: default;
+        z-index: 0;
+        
+    }
+
+    #content .about #opinions button{
+        position: absolute;
+        bottom: -130px;
+        right: 50%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        
+    }
+}
+
+
+@media only screen and (max-width: 900px){
+    #content{
+        height: 175vh;
+    }
+
+    #content .about #prototype{
+        position: absolute;
+        bottom: 20%;
+        right: 50%;
+        transform: translate(50%, 0);
+        
+    }
+
+    #content .about #opinions .card#cardFront{
+    
+        cursor: default;
+        transform: translate(-50%, 0) scale(1);
+        top: 55px;
+        
+    }
+
+    #content .about #opinions .card#cardRight{
+        cursor: default;
+        opacity: 0.3;
+        right: 20%;
+        left: 80%;
+        transform: translate(-50%, 0) scale(0.75);
+        top: 55px;
+        z-index: 0;
+    }
+
+    #content .about #opinions .card#cardLeft{
+    
+        opacity: 0.3;
+        right: 80%;
+        left: 20%;
+        transform: translate(-50%, 0) scale(0.75);
+        top: 55px;
+        cursor: default;
+        z-index: 0;
+        
+    }
+
+    #content .about #opinions button{
+        position: absolute;
+        bottom: -130px;
+        right: 50%;
+        left: 50%;
+        transform: translate(-50%, 0);
         
     }
 
@@ -389,17 +476,53 @@
 
 @media only screen and (max-width: 770px){
     #content{
-        font-size: 85%;
+        height: 180vh;
         
     }
 
-    #buttonKnow {
-        font-size: 120%;
-        width: 120px;
+    #content .about #prototype{
+        position: absolute;
+        bottom: 20%;
+        right: 50%;
+        transform: translate(50%, 0);
+        width: 450px;
+        height: 253.125px;
+        
     }
 
-    #content .about{
-        transform: translate(50%, 0) scale(0.9);
+    #content .about #opinions .card{
+        width: 270px;
+    }
+
+    #content .about #opinions .card#cardFront{
+    
+        cursor: default;
+        transform: translate(-50%, 0) scale(1);
+        top: 55px;
+        size: 70%;
+        
+    }
+
+    #content .about #opinions .card#cardRight{
+        cursor: default;
+        opacity: 0.3;
+        right: 20%;
+        left: 80%;
+        transform: translate(-50%, 0) scale(0.75);
+        top: 55px;
+        z-index: 0;
+    }
+
+    #content .about #opinions .card#cardLeft{
+    
+        opacity: 0.3;
+        right: 80%;
+        left: 20%;
+        transform: translate(-50%, 0) scale(0.75);
+        top: 55px;
+        cursor: default;
+        z-index: 0;
+        
     }
 
     
@@ -409,90 +532,342 @@
 
 @media only screen and (max-width: 680px){
     #content{
-        height: 110vh;
-        font-size: 80%;
-    }
-
-    #content .about{
-        bottom: -150px;
+        height: 185vh;
     }
 }
 
-@media only screen and (max-width: 510px){
+@media only screen and (max-width: 550px){
     #content{
-        height: 110vh;
-        font-size: 75%;
+        height: 195vh;
     }
 
-    #buttonKnow {
-        font-size: 100%;
-        width: 100px;
+    #content .about #prototype{
+        position: absolute;
+        bottom: 20%;
+        right: 50%;
+        transform: translate(50%, 0);
+        width: 380px;
+        height: 213.75px;
+        
     }
 
-    #content .about{
-        bottom: -300px;
-        transform: translate(50%, 0) scale(0.8);
+    #content .about #opinions .card{
+        width: 250px;
+    }
+    
+}
+
+
+@media only screen and (max-width: 465px){
+    #content{
+        height: 200vh;
+        
+    }
+
+    #content .about #prototype{
+        
+        bottom: 15%;
+        
+        
+    }
+
+
+    #content .about #opinions .card#cardFront{
+    
+       
+        top: 130px;
+        
+        
     }
 
     #content .about #opinions .card#cardRight{
-        cursor: default;
-        opacity: 0.3;
-        right: 10%;
-        left: 90%;
-        transform: translate(-50%, 0) scale(0.75);
         
-        z-index: 0;
+        top: 130px;
+        
     }
 
     #content .about #opinions .card#cardLeft{
     
-        opacity: 0.3;
-        right: 90%;
-        left: 10%;
-        transform: translate(-50%, 0) scale(0.75);
-        cursor: default;
-        z-index: 0;
+       
+        top: 130px;
+        
         
     }
 
+    #content .about #opinions button{
+        
+        bottom: -205px;
+        
+        
+    }
+
+}
+
+@media only screen and (max-width: 430px){
+    #content{
+        height: 215vh;
+    }
+
+    #content .about #prototype{
+        
+        bottom: 15%;
+        width: 300px;
+        height: 168.75px;
+        
+    }
+
+}
+
+
+
+@media only screen and (max-height: 880px){
+    #content{
+        height: 230vh;
+    }
+}
+
+
+@media only screen and (max-height: 830px){
+    #content{
+        height: 240vh;
+        
+    }
+    #content .about #prototype{
+        
+        bottom: 15%;
+        
+        
+    }
+}
+
+@media only screen and (max-height: 800px){
+    #content{
+        height: 250vh;
+        
+    }
+    #content .about #prototype{
+        
+        bottom: 16%;
+        
+        
+    }
+}
+
+@media only screen and (max-height: 775px){
+    #content{
+        height: 260vh;
+        
+    }
+    #content .about #prototype{
+        
+        bottom: 15%;
+        
+        
+    }
+
+
+    #content .about #opinions .card#cardFront{
     
+       
+        top: 170px;
+        
+        
+    }
+
+    #content .about #opinions .card#cardRight{
+        
+        top: 170px;
+        
+    }
+
+    #content .about #opinions .card#cardLeft{
+    
+       
+        top: 170px;
+        
+        
+    }
+
+    #content .about #opinions button{
+        
+        bottom: -235px;
+        
+        
+    }
 }
 
-
-@media only screen and (max-width: 390px){
+@media only screen and (max-height: 735px){
     #content{
-        height: 130vh;
-        font-size: 70%;
+        height: 280vh;
+        
+    }
+    #content .about #prototype{
+        
+        bottom: 15%;
+        
+        
     }
 
-    #content .about{
-        bottom: -300px;
-        transform: translate(50%, 0) scale(0.7);
+
+    #content .about #opinions .card#cardFront{
+    
+       
+        top: 170px;
+        
+        
     }
 
-  
+    #content .about #opinions .card#cardRight{
+        
+        top: 170px;
+        
+    }
 
+    #content .about #opinions .card#cardLeft{
+    
+       
+        top: 170px;
+        
+        
+    }
 
-
+    #content .about #opinions button{
+        
+        bottom: -235px;
+        
+        
+    }
 }
 
-@media only screen and (max-height: 850px){
+@media only screen and (max-height: 680px){
     #content{
-        height: 120vh;
+        height: 300vh;
+        
+    }
+    #content .about #prototype{
+        
+        bottom: 15%;
+        
+        
+    }
+
+
+    #content .about #opinions .card#cardFront{
+    
+       
+        top: 170px;
+        
+        
+    }
+
+    #content .about #opinions .card#cardRight{
+        
+        top: 170px;
+        
+    }
+
+    #content .about #opinions .card#cardLeft{
+    
+       
+        top: 170px;
+        
+        
+    }
+
+    #content .about #opinions button{
+        
+        bottom: -235px;
+        
+        
     }
 }
 
-@media only screen and (max-height: 760px){
+@media only screen and (max-height: 635px){
     #content{
-        height: 130vh;
+        height: 330vh;
+        
+    }
+    #content .about #prototype{
+        
+        bottom: 15%;
+        
+        
+    }
+
+
+    #content .about #opinions .card#cardFront{
+    
+       
+        top: 170px;
+        
+        
+    }
+
+    #content .about #opinions .card#cardRight{
+        
+        top: 170px;
+        
+    }
+
+    #content .about #opinions .card#cardLeft{
+    
+       
+        top: 170px;
+        
+        
+    }
+
+    #content .about #opinions button{
+        
+        bottom: -235px;
+        
+        
     }
 }
 
-@media only screen and (max-height: 690px){
+@media only screen and (max-height: 580px){
     #content{
-        height: 140vh;
+        height: 360vh;
+        
+    }
+    #content .about #prototype{
+        
+        bottom: 15%;
+        
+        
+    }
+
+
+    #content .about #opinions .card#cardFront{
+    
+       
+        top: 170px;
+        
+        
+    }
+
+    #content .about #opinions .card#cardRight{
+        
+        top: 170px;
+        
+    }
+
+    #content .about #opinions .card#cardLeft{
+    
+       
+        top: 170px;
+        
+        
+    }
+
+    #content .about #opinions button{
+        
+        bottom: -235px;
+        
+        
     }
 }
+
 
 
 
